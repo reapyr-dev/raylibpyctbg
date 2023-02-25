@@ -378,7 +378,7 @@ class ParameterInfo(InfoBase):
 
     @property
     def py_name(self):
-        return snakefy(self.info.get('name')) if self.config.snakefy_params else self.name
+        return (snakefy(self.info.get('name')) if self.config.snakefy_params else self.name).replace("from", "from_")
 
     @property
     def type(self):

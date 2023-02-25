@@ -156,7 +156,8 @@ elif _lib_platform == 'darwin':
 else:
     _bitness = '64bit' if sys.maxsize > 2 ** 32 else '32bit'
 
-_lib_default = os.path.join({lib_basedir}, _bitness, _lib_fname[_lib_platform])
+#_lib_default = os.path.join({lib_basedir}, _bitness, _lib_fname[_lib_platform])
+_lib_default = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'bin', _bitness, _lib_fname[_lib_platform])
 
 if _dotraylib_used:
     try:
@@ -307,7 +308,7 @@ def _arr_out(data):
 
 
 def _ptr_out(ptr, length=0):
-    [ptr.contents] if length == 1 else ([] if not length else ptr[:length])
+    return [ptr.contents] if length == 1 else ([] if not length else ptr[:length])
 
 # region TYPE CAST FUNCS
 
