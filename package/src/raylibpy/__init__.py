@@ -1451,7 +1451,7 @@ if os.path.exists(_dotraylib) and os.path.isfile(_dotraylib):
 
 _lib_fname = {
     'win32': 'raylib.dll',
-    'linux': 'libraylib.so.4.2.0',
+    'linux': 'raylib.so',
     'darwin': 'libraylib.4.2.0.dylib'
 }
 

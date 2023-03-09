@@ -20,7 +20,7 @@
     "rmathIncluded": false,
     "rlglIncluded": false,
     "win32LibFilename": "raylib.dll",
-    "linuxLibFilename": "libraylib.so.4.2.0",
+    "linuxLibFilename": "raylib.so",
     "darwinLibFilename": "libraylib.4.2.0.dylib"
   },
   "structs": {

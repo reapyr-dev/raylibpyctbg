@@ -1518,7 +1518,7 @@ def main(in_fnames, out_fname, in_meta=None, doc_out_fname=None, **config):
         "typeHint": True,
         "typeAnnotate": False,
         "win32LibFilename": "raylib.dll",
-        "linuxLibFilename": "libraylib.so.4.2.0",
+        "linuxLibFilename": "raylib.so",
         "darwinLibFilename": "libraylib.4.2.0.dylib"
     }
 
